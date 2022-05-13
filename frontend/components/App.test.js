@@ -17,17 +17,18 @@ test('renders app without errors', () =>{
 
 test('renders moves to the page', ()=>{
   render(<AppFunctional/>)
-  const welcome = screen.getByText(/you moved/i)
-  expect(welcome).toBeTruthy();
+  const moves = screen.getByText(/you moved/i)
+  expect(moves).toBeTruthy();
 })
 
 test('renders coordinates to the page', ()=>{
   render(<AppFunctional/>)
-  const welcome = screen.getByText(/ coordinates /i)
-  expect(welcome).toBeTruthy();
+  const coordinates = screen.getByText(/coordinates/i)
+  expect(coordinates).toBeTruthy();
 })
 
-test('',()=>{
-  render(<)
+test('email renders in the DOM', ()=>{
+  render(<AppFunctional/>)
+  const email = document.querySelector('#email')
+  expect(email).toBeTruthy();
 })
-
